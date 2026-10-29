@@ -1,0 +1,40 @@
+{
+  "checked_on": "2026-10-29",
+  "scope": "本地移交包与自制教学模型",
+  "automated": {
+    "stage_logic": 9,
+    "editing": 17,
+    "input_handling": 12,
+    "all_passed": true
+  },
+  "browser_checks": [
+    "教学模型载入",
+    "生成六步后六格可见",
+    "同步旋转目视核验",
+    "单格旋转仅第4格变化",
+    "第3阶段GLB导出并校验文件头与长度",
+    "方案JSON保存并解析结构",
+    "品牌标题与新预览截图复核",
+    "保存JSON后修改第3步标题，再恢复，标题与六格状态还原",
+    "第3阶段GLB重新导入，36个三角面载入且浏览器无错误"
+  ],
+  "skill_validation": {
+    "official_quick_validate": "环境缺少PyYAML，脚本未完成",
+    "manual_structure": "名称、描述、Markdown本地链接检查通过"
+  },
+  "not_verified": [
+    "真实项目推演的建筑空间与构件语义完全正确",
+    "Windows执行",
+    "更多新项目的通用成功率"
+  ],
+  "video_status": "仅脚本与分镜，未录制或发布",
+  "cross_ai_trial": {
+    "model": "DeepSeek-V4.1-Flash",
+    "application": "WorkBuddy 5.9.2",
+    "only_target_input": "最终建筑GLB",
+    "implementation": "外部AI独立构造前五阶段",
+    "browser_verification": "Codex使用现有Chrome补测，生成、同步旋转、单独旋转、JSON恢复、GLB导出重开通过",
+    "overall": "基本交互闭环通过，建筑解释待人工审核",
+    "report": "04_DeepSeek跨AI复现记录.md"
+  }
+}
